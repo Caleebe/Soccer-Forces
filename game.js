@@ -28,6 +28,11 @@ class Game {
     this.ball.show(this.gp.pos, this.gp.currCharge());
     this.drawStadium();
     this.gp.show();
+    stroke('##FFFFFF');
+    strokeWeight(1);
+    textSize(20);
+    textAlign('center');
+    text('Mover: W A S D \nTrocar Carga: espaço', width/2, this.y2 + (this.y1 / 2));
   }
 
   drawStadium() {
