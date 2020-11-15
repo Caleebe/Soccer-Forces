@@ -47,7 +47,7 @@ class Ball {
 
   update() {
     this.vel.add(this.acc);
-    this.vel.limit(5);
+    this.vel.limit(20);
     this.pos.add(this.vel);
     this.acc.mult(0);
   }
