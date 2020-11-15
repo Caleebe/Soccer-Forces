@@ -19,7 +19,7 @@ class Ball {
 
     if (charge === 0) {
       if (d < 20) {
-        force.mult(-2);
+        force.mult(-1);
       }
       this.acc.add(force);
     } else this.acc.sub(force);
@@ -47,7 +47,7 @@ class Ball {
 
   update() {
     this.vel.add(this.acc);
-    this.vel.limit(10);
+    this.vel.limit(5);
     this.pos.add(this.vel);
     this.acc.mult(0);
   }
